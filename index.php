@@ -23,6 +23,16 @@
 
         <!-- Add your site or application content here -->
         <p>Hello world! This is HTML5 Boilerplate.</p>
+        
+        <form enctype="multipart/form-data" method="post" action="accept-file.php">
+        <div class="row">
+          <label for="fileToUpload">Select a File to Upload</label><br />
+          <input type="file" name="fileToUpload" id="fileToUpload" />
+        </div>
+        <div class="row">
+          <input type="submit" value="Upload" />
+        </div>
+      </form>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
