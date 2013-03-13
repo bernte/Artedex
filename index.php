@@ -40,17 +40,36 @@
             <div class="btn-b"></div>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-1.9.0.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+        <script type="text/javascript">
+            function getUrlVars() {
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                    vars[key] = value;
+                });
+                return vars;
+            }
+            var filename = getUrlVars()["file"];
+            if (filename !== undefined)
+            {
+                var qr_url = "proxy.php?url=http://localhost:8080/qr/decode?u=http://localhost/artedex/uploads/" + filename;
+                // var userdata_url = "http://localhost/artedex/api/users/1";
+
+                $.get(qr_url, function(qrdata) {
+                    console.log(qrdata);
+                    var userdata_url = "http://localhost/artedex/api/users/" + qrdata;
+                    $.get(userdata_url, function(userdata) {
+                        console.log(userdata);
+                    });
+                    // console.log(userdata_url);
+                });
+
+
+            }
+
         </script>
     </body>
 </html>
