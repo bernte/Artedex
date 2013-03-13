@@ -95,7 +95,11 @@ textarea {
 
 /* Pokédex */
 
-
+.pokedex {
+    width: 40em;
+    height: 6em;
+    background-color: red;
+}
 
 
 
