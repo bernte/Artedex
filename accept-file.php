@@ -16,8 +16,9 @@ if ($_FILES['fileToUpload']['error'] > 0) {
         // resizing to 200x200
         $newImage = $manipulator->resample(800, 600);
         // saving file to uploads folder
+        $filename = $newNamePrefix . $_FILES['fileToUpload']['name'];
         $manipulator->save('uploads/' . $newNamePrefix . $_FILES['fileToUpload']['name']);
-        echo 'Done ...';
+        echo 'Uploaded: ' . $filename;
     } else {
         echo 'You must upload an image...';
     }
