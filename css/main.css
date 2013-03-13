@@ -96,15 +96,42 @@ textarea {
 /* Pokédex */
 
 .pokedex {
-    width: 40em;
-    height: 6em;
+    width: 30em;
+    height: 40em;
     background-color: red;
+    margin: 0 auto;
 }
 
+.screen {
+    width: 75%;
+    height: 40%;
+    margin: 0 auto;
+    border: 20px solid #bbb;
+    border-radius: 20px;
+    background-color: black;
+}
 
+.ball {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 200px;
+}
 
-
-
+.text {
+    bottom: 0;
+    /*position: absolute;*/
+    margin-top: -15px;
+    width: 30em;
+    pointer-events: none;
+    height: 20%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(255, 255, 255,.3);
+}
 
 
 
