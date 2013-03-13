@@ -16,13 +16,18 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body class="home">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="container">
+
+        <h1>ArtéDex</h1>
+        <p class="tm">TM</p>
+
+        <img src="img/ash.png" alt="ash">
         
         <form enctype="multipart/form-data" method="post" action="accept-file.php">
             <div class="row">
@@ -33,11 +38,8 @@
               <input type="submit" value="Upload" />
             </div>
         </form>
+        <p>&copy; '95.'96.'98 GAME FREAK inc.</p>
 
-        <div class="pokedex">
-            <div class="screen"></div>
-            <div class="ball"></div>
-            <div class="text"></div>
         </div>
 
         <script src="js/vendor/jquery-1.9.0.min.js"></script>

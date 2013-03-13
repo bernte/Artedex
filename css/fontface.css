@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'pokemon';
+    src: url('../fonts/pokemon/pokemon_solid-webfont.eot');
+    src: url('../fonts/pokemon/pokemon_solid-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pokemon/pokemon_solid-webfont.woff') format('woff'),
+         url('../fonts/pokemon/pokemon_solid-webfont.ttf') format('truetype'),
+         url('../fonts/pokemon/pokemon_solid-webfont.svg#pokemon_solidnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pxl';
+    src: url('../fonts/pxl/04b_03__-webfont.eot');
+    src: url('../fonts/pxl/04b_03__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pxl/04b_03__-webfont.woff') format('woff'),
+         url('../fonts/pxl/04b_03__-webfont.ttf') format('truetype'),
+         url('../fonts/pxl/04b_03__-webfont.svg#04b03regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

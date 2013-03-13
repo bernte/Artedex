@@ -1,3 +1,5 @@
+@import url('fontface.css');
+
 /*
  * HTML5 Boilerplate
  *
@@ -92,6 +94,35 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* Upload */
+
+h1{
+    font-family: 'pokemon';
+    text-shadow: -10px 7px rgb(108,115,82);
+    font-size: 5em;
+    color: rgb(138,149,109);
+    -webkit-text-stroke: 1px rgba(0,0,0,.7);
+}
+
+.tm {
+    margin: -95px 0 18px 360px;
+}
+
+img {
+    margin-bottom: 35px;
+}
+
+.home {
+    background-color: rgb(195, 207, 161);
+    font-family: 'pxl';
+}
+
+.container{
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
 
 /* Pokédex */
 
