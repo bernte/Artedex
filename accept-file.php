@@ -18,7 +18,13 @@ if ($_FILES['fileToUpload']['error'] > 0) {
         // saving file to uploads folder
         $filename = $newNamePrefix . $_FILES['fileToUpload']['name'];
         $manipulator->save('uploads/' . $newNamePrefix . $_FILES['fileToUpload']['name']);
-        echo 'Uploaded: ' . $filename;
+
+        //echo 'Uploaded: ' . $filename;
+
+        $domain = $_SERVER["SERVER_NAME"];
+        $url = "artedex";
+        header("Location: .?file=" . $filename);
+
     } else {
         echo 'You must upload an image...';
     }
