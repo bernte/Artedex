@@ -111,16 +111,23 @@ textarea {
     background-color: black;
 }
 
-.ball{
+.ball {
     border-radius: 50%;
-    
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 200px;
 }
 
 .text {
     bottom: 0;
-    position: absolute;
+    /*position: absolute;*/
+    margin-top: -15px;
     width: 30em;
-    height: 30%;
+    pointer-events: none;
+    height: 20%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: rgba(255, 255, 255,.3);
