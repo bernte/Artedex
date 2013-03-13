@@ -96,15 +96,35 @@ textarea {
 /* Pokédex */
 
 .pokedex {
-    width: 40em;
-    height: 6em;
+    width: 30em;
+    height: 40em;
     background-color: red;
+    margin: 0 auto;
 }
 
+.screen {
+    width: 75%;
+    height: 40%;
+    margin: 0 auto;
+    border: 20px solid #bbb;
+    border-radius: 20px;
+    background-color: black;
+}
 
+.ball{
+    border-radius: 50%;
+    
+}
 
-
-
+.text {
+    bottom: 0;
+    position: absolute;
+    width: 30em;
+    height: 30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(255, 255, 255,.3);
+}
 
 
 

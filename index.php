@@ -36,8 +36,8 @@
 
         <div class="pokedex">
             <div class="screen"></div>
-            <div class="btn-a"></div>
-            <div class="btn-b"></div>
+            <div class="ball"></div>
+            <div class="text"></div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
